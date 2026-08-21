@@ -1,0 +1,7 @@
+{
+  "name": "কাজী এগ্রোটেক",
+  "description": "কাজী এগ্রোটেক - লেয়ার পোল্ট্রি ফার্ম ম্যানেজমেন্ট সিস্টেম। সম্পূর্ণ রিয়েলটাইম ফায়ারবেস ক্লাউড ডাটাবেজ এবং বাংলা ইন্টারফেস।",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

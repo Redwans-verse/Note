@@ -1,0 +1,46 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "users": {
+      "$uid": {
+        ".read": "auth != null",
+        ".write": "auth != null && auth.uid == $uid"
+      }
+    },
+    "farms": {
+      "$farmId": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+      }
+    },
+    "dailyReports": {
+      ".read": "auth != null",
+      ".indexOn": ["farmId", "date"],
+      "$reportId": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+      }
+    },
+    "monthlyExpenses": {
+      ".read": "auth != null",
+      ".indexOn": ["farmId", "date"],
+      "$expenseId": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+      }
+    },
+    "settings": {
+      "$farmId": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+      }
+    },
+    "backups": {
+      "$farmId": {
+        ".read": "auth != null",
+        ".write": "auth != null"
+      }
+    }
+  }
+}
